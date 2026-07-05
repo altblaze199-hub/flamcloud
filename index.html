@@ -1,64 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlameClouds - Hosting</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-950 text-white font-sans">
-
-    <section class="py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-5xl font-extrabold text-center mb-4 text-orange-500">FlameClouds</h2>
-            <p class="text-center text-slate-400 mb-16 text-lg">Blazing fast hosting for your next big idea.</p>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Starter Plan -->
-                <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-orange-500/50 transition">
-                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
-                    <div class="text-4xl font-bold mb-6">$9<span class="text-lg font-normal text-slate-400">/mo</span></div>
-                    <ul class="space-y-4 mb-8 text-slate-300">
-                        <li>✓ 1 Website</li>
-                        <li>✓ 10GB NVMe SSD</li>
-                        <li>✓ Free SSL</li>
-                        <li>✓ 24/7 Support</li>
-                    </ul>
-                    <button class="w-full py-3 rounded-xl font-bold bg-slate-700 hover:bg-slate-600 transition">Sign Up</button>
-                </div>
-
-                <!-- Pro Plan -->
-                <div class="p-8 rounded-2xl border border-orange-500 bg-slate-900 relative shadow-2xl shadow-orange-500/10">
-                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-xs font-bold px-3 py-1 rounded-full">POPULAR</div>
-                    <h3 class="text-2xl font-bold mb-2">Pro</h3>
-                    <div class="text-4xl font-bold mb-6">$29<span class="text-lg font-normal text-slate-400">/mo</span></div>
-                    <ul class="space-y-4 mb-8 text-slate-300">
-                        <li>✓ 10 Websites</li>
-                        <li>✓ 50GB NVMe SSD</li>
-                        <li>✓ Free SSL</li>
-                        <li>✓ Daily Backups</li>
-                        <li>✓ Priority Support</li>
-                    </ul>
-                    <button class="w-full py-3 rounded-xl font-bold bg-orange-500 hover:bg-orange-600 transition">Sign Up Now</button>
-                </div>
-
-                <!-- Enterprise Plan -->
-                <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-orange-500/50 transition">
-                    <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
-                    <div class="text-4xl font-bold mb-6">$99<span class="text-lg font-normal text-slate-400">/mo</span></div>
-                    <ul class="space-y-4 mb-8 text-slate-300">
-                        <li>✓ Unlimited Websites</li>
-                        <li>✓ 200GB NVMe SSD</li>
-                        <li>✓ Free SSL</li>
-                        <li>✓ Dedicated IP</li>
-                        <li>✓ 24/7 VIP Support</li>
-                    </ul>
-                    <button class="w-full py-3 rounded-xl font-bold bg-slate-700 hover:bg-slate-600 transition">Sign Up</button>
-                </div>
-            </div>
+export default function Pricing() {
+  return (
+    <section className="bg-black py-24 text-white">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-base font-semibold leading-7 text-orange-400">Pricing</h2>
+          <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">FlameClouds Hosting</p>
         </div>
-    </section>
+        
+        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {/* Plan 1 */}
+          <div className="rounded-3xl p-8 ring-1 ring-white/10 xl:p-10 hover:ring-orange-500 transition-all">
+            <h3 className="text-lg font-semibold">Starter</h3>
+            <p className="mt-4 text-4xl font-bold">$9</p>
+            <ul className="mt-8 space-y-3 text-sm text-gray-300">
+              <li>✓ 10GB NVMe SSD</li>
+              <li>✓ 1 Website</li>
+            </ul>
+            <button className="mt-8 w-full rounded-md bg-white/10 px-3 py-2 text-center font-semibold hover:bg-white/20">Buy Now</button>
+          </div>
 
-</body>
-</html>
+          {/* Plan 2 (Highlighted) */}
+          <div className="rounded-3xl p-8 bg-white text-black ring-2 ring-orange-500 xl:p-10 shadow-2xl shadow-orange-500/20">
+            <h3 className="text-lg font-semibold text-orange-600">Pro</h3>
+            <p className="mt-4 text-4xl font-bold">$29</p>
+            <ul className="mt-8 space-y-3 text-sm text-gray-600">
+              <li>✓ 50GB NVMe SSD</li>
+              <li>✓ 10 Websites</li>
+              <li>✓ Free Domain</li>
+            </ul>
+            <button className="mt-8 w-full rounded-md bg-orange-600 px-3 py-2 text-center font-semibold text-white hover:bg-orange-700">Buy Now</button>
+          </div>
+
+          {/* Plan 3 */}
+          <div className="rounded-3xl p-8 ring-1 ring-white/10 xl:p-10 hover:ring-orange-500 transition-all">
+            <h3 className="text-lg font-semibold">Enterprise</h3>
+            <p className="mt-4 text-4xl font-bold">$99</p>
+            <ul className="mt-8 space-y-3 text-sm text-gray-300">
+              <li>✓ 200GB NVMe SSD</li>
+              <li>✓ Unlimited Sites</li>
+              <li>✓ Dedicated IP</li>
+            </ul>
+            <button className="mt-8 w-full rounded-md bg-white/10 px-3 py-2 text-center font-semibold hover:bg-white/20">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
