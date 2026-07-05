@@ -1,49 +1,282 @@
-export default function Pricing() {
-  return (
-    <section className="bg-black py-24 text-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-orange-400">Pricing</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">FlameClouds Hosting</p>
-        </div>
-        
-        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {/* Plan 1 */}
-          <div className="rounded-3xl p-8 ring-1 ring-white/10 xl:p-10 hover:ring-orange-500 transition-all">
-            <h3 className="text-lg font-semibold">Starter</h3>
-            <p className="mt-4 text-4xl font-bold">$9</p>
-            <ul className="mt-8 space-y-3 text-sm text-gray-300">
-              <li>✓ 10GB NVMe SSD</li>
-              <li>✓ 1 Website</li>
-            </ul>
-            <button className="mt-8 w-full rounded-md bg-white/10 px-3 py-2 text-center font-semibold hover:bg-white/20">Buy Now</button>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlameClouds | Premium Hosting</title>
 
-          {/* Plan 2 (Highlighted) */}
-          <div className="rounded-3xl p-8 bg-white text-black ring-2 ring-orange-500 xl:p-10 shadow-2xl shadow-orange-500/20">
-            <h3 className="text-lg font-semibold text-orange-600">Pro</h3>
-            <p className="mt-4 text-4xl font-bold">$29</p>
-            <ul className="mt-8 space-y-3 text-sm text-gray-600">
-              <li>✓ 50GB NVMe SSD</li>
-              <li>✓ 10 Websites</li>
-              <li>✓ Free Domain</li>
-            </ul>
-            <button className="mt-8 w-full rounded-md bg-orange-600 px-3 py-2 text-center font-semibold text-white hover:bg-orange-700">Buy Now</button>
-          </div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-          {/* Plan 3 */}
-          <div className="rounded-3xl p-8 ring-1 ring-white/10 xl:p-10 hover:ring-orange-500 transition-all">
-            <h3 className="text-lg font-semibold">Enterprise</h3>
-            <p className="mt-4 text-4xl font-bold">$99</p>
-            <ul className="mt-8 space-y-3 text-sm text-gray-300">
-              <li>✓ 200GB NVMe SSD</li>
-              <li>✓ Unlimited Sites</li>
-              <li>✓ Dedicated IP</li>
-            </ul>
-            <button className="mt-8 w-full rounded-md bg-white/10 px-3 py-2 text-center font-semibold hover:bg-white/20">Buy Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://kit.fontawesome.com/4ad5d0b8d6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<nav>
+
+<div class="logo">
+
+🔥 FlameClouds
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#plans">Plans</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+<li><a class="btn" href="#">Order Now</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+
+Affordable <span>Premium Hosting</span>
+
+</h1>
+
+<p>
+
+Powerful Ryzen Servers, NVMe SSD, Instant Setup,
+Low Latency and Affordable Pricing.
+
+</p>
+
+<div class="buttons">
+
+<a class="primary" href="#plans">View Plans</a>
+
+<a class="secondary" href="#">Discord</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="server-card">
+
+<i class="fas fa-server"></i>
+
+<h2>99.9%</h2>
+
+<p>Network Uptime</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="features" id="features">
+
+<h2>Why Choose FlameClouds?</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fas fa-microchip"></i>
+
+<h3>Ryzen CPUs</h3>
+
+<p>Latest generation processors for maximum performance.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-shield-alt"></i>
+
+<h3>DDoS Protection</h3>
+
+<p>Enterprise-grade security for uninterrupted uptime.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-bolt"></i>
+
+<h3>Instant Setup</h3>
+
+<p>Your server is ready within minutes.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-hdd"></i>
+
+<h3>NVMe SSD</h3>
+
+<p>Ultra-fast storage for blazing speeds.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-headset"></i>
+
+<h3>Support</h3>
+
+<p>Friendly support whenever you need help.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-globe"></i>
+
+<h3>Low Latency</h3>
+
+<p>Fast network optimized for gaming.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="plans" class="pricing">
+
+<h2>Paid Plans</h2>
+
+<div class="pricing-grid">
+
+<div class="plan">
+<h3>🟢 Starter</h3>
+<h1>₹20</h1>
+<p>/month</p>
+<ul>
+<li>1 GB RAM</li>
+<li>1 vCPU</li>
+<li>10 GB SSD</li>
+<li>Basic Support</li>
+</ul>
+<a href="#">Order Now</a>
+</div>
+
+<div class="plan popular">
+<span>Most Popular</span>
+<h3>🔵 Lite</h3>
+<h1>₹49</h1>
+<p>/month</p>
+<ul>
+<li>2 GB RAM</li>
+<li>2 vCPU</li>
+<li>15 GB SSD</li>
+<li>Bot Hosting</li>
+</ul>
+<a href="#">Order Now</a>
+</div>
+
+<div class="plan">
+<h3>🟣 Pro</h3>
+<h1>₹99</h1>
+<p>/month</p>
+<ul>
+<li>4 GB RAM</li>
+<li>2 vCPU</li>
+<li>30 GB SSD</li>
+<li>Minecraft</li>
+</ul>
+<a href="#">Order Now</a>
+</div>
+
+<div class="plan">
+<h3>🟠 Ultra</h3>
+<h1>₹199</h1>
+<p>/month</p>
+<ul>
+<li>8 GB RAM</li>
+<li>4 vCPU</li>
+<li>50 GB SSD</li>
+<li>Gaming Servers</li>
+</ul>
+<a href="#">Order Now</a>
+</div>
+
+<div class="plan">
+<h3>🔴 Beast</h3>
+<h1>₹399</h1>
+<p>/month</p>
+<ul>
+<li>16 GB RAM</li>
+<li>6 vCPU</li>
+<li>100 GB SSD</li>
+<li>Hosting Panel</li>
+</ul>
+<a href="#">Order Now</a>
+</div>
+
+<div class="plan">
+<h3>⚫ Titan</h3>
+<h1>₹799</h1>
+<p>/month</p>
+<ul>
+<li>32 GB RAM</li>
+<li>8+ vCPU</li>
+<li>200 GB SSD</li>
+<li>Large Networks</li>
+</ul>
+<a href="#">Order Now</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="addons">
+
+<h2>Add-ons</h2>
+
+<div class="addon-grid">
+
+<div>⚡ Extra RAM</div>
+
+<div>🛡️ DDoS Protection</div>
+
+<div>🌐 Custom Domain</div>
+
+<div>💾 Backup System</div>
+
+<div>🤖 Premium Support</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🔥 FlameClouds</h2>
+
+<p>Affordable Hosting for Everyone.</p>
+
+<p>© 2026 FlameClouds</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
